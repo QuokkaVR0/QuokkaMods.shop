@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quokka Mods</title>
+
+  <!-- Komika Axis Font -->
+  <link href="https://fonts.cdnfonts.com/css/komika-axis" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.cdnfonts.com/css/komika-axis');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Komika Axis', sans-serif;
+      background: url('maxresdefault.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      color: brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .overlay {
+      text-align: center;
+      backdrop-filter: brightness(0.9);
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 50px;
+    }
+
+    .bubbles {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .bubble {
+      width: 150px;
+      height: 150px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .bubble:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Quokka mods</h1>
+    <div class="bubbles">
+      <div class="bubble">Mod 1</div>
+      <div class="bubble">Mod 2</div>
+      <div class="bubble">Mod 3</div>
+    </div>
+  </div>
+</body>
+</html>
